@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Investor</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#yahoo_finance_widget").show();
+  });
+</script>
+<%= stylesheet_link_tag "styles" %>
+</head>
+<body>
+<div id="content">
+<div id="back">
+<!-- header begins -->
+<div id="header"> 
+	<div id="logo">
+		<h1>Investor</h1>
+		<h5>by Greg Beddow</h5>
+	</div>
+  <div id="menu">
+		<ul>
+			<li id="button1"><a href="/"  title="">Home</a></li>
+			<li id="button2"><a href="/admin" title="">Admin</a></li>
+			<li id="button4"><a href="/about" title="">About</a></li>
+			<li id="button5"><a href="#" title="">Contact</a></li>
+		</ul>
+ </div>
+</div>
+<!-- main begins -->
+<div id="main">
+  <div id="right">
+    <%= yield :layout %>
+	</div>
+	<div id="left">
+    <div class="title_back">
+      <!-- Start of Yahoo! Finance code -->
+      <iframe allowtransparency="true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" src="http://api.finance.yahoo.com/instrument/1.0/%5EIXIC,LOGI,WU,FORM/badge;chart=1y;news=5;quote/HTML?AppID=q6wLi3iqvHKO596i4kn.kO5L8Q--&amp;sig=9ppalEks7lr3JpvlDYZagTwu.Ek-&amp;t=1253300851072" width="300px" height="891px"><a href="http://finance.yahoo.com">Yahoo! Finance</a><br/><a href="http://finance.yahoo.com/q?s=^IXIC">Quote for ^IXIC</a></iframe>
+    <!-- End of Yahoo! Finance code -->
+  </div>
+	</div>
+</div>
+</div>
+</div>
+<!--footer begins -->
+<div id="footer">
+<p>Site Copyright &copy; 2009 Greg Beddow. Design Copyright &copy; 2008 <a href="http://www.metamorphozis.com/" title="Metamorphosis Design">Metamorphosis Design</a></p>
+</div>
+</body>
+</html>

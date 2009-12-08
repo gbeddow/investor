@@ -1,0 +1,76 @@
+<% require 'rubygems' %>
+<% require 'nokogiri' %>
+
+<h2>optionsXpress: <%= $welcomeMsg %></h2>
+<% if @online_offline == "online" %>
+  <% form_tag 'admin/signout' do %>
+    <%= submit_tag("Sign Out") %> 
+  <% end %>
+<% else %>
+  <% form_tag 'admin/signin' do %>
+    <%= label_tag(:sUserName, "UserName:") %>
+    <%= text_field_tag(:sUserName) %>
+    <%= label_tag(:sPassword, "Password:") %>
+    <%= password_field_tag(:sPassword) %>
+    <%= submit_tag("Sign In") %> 
+  <% end %>
+<% end %>
+<p><%= @errorMsg %></p>
+
+<% if @all_investments.length == 0 %>
+  <h2>NO OFFLINE DATA as of <%= Time::now %></h2>
+<% else %>
+  <% first_offline_investment_xml = Nokogiri::XML(@all_investments[0].xml) %>
+
+  <h2>Investments (<%= @online_offline %>) as of <%= @all_investments[0].updated_at %></h2>
+
+  <div class="entry">
+    <table border="2">
+       <tr>
+        <th>Symbol</th>
+        <th>Description</th>
+        <th>Stock</th>
+        <th>Quantity</th>
+        <th>Cost&nbsp;Basis</th>
+        <th>Price</th>
+        <th>Change</th>
+        <th>Value</th>
+        <th>Gain&nbsp;/&nbsp;Loss&nbsp;$</th>
+      </tr>
+      <% for investment in first_offline_investment_xml.xpath('//xmlns:ArrayOfCServPosition/xmlns:CServPosition', 'xmlns' => 'http://oxbranch.optionsxpress.com') -%>
+         <tr>
+           <td><%= investment.xpath("xmlns:Symbol[1]/text()", 'xmlns' => 'http://oxbranch.optionsxpress.com') %></td>
+           <td><%= investment.xpath("xmlns:SymbolDescr[1]/text()", 'xmlns' => 'http://oxbranch.optionsxpress.com') %></td>
+           <td><%= investment.xpath("xmlns:UnderlyingLast[1]/text()", 'xmlns' => 'http://oxbranch.optionsxpress.com') %></td>
+           <td><%= investment.xpath("xmlns:Quantity[1]/text()", 'xmlns' => 'http://oxbranch.optionsxpress.com') %></td>
+           <td><%= investment.xpath("xmlns:CostBasis[1]/text()", 'xmlns' => 'http://oxbranch.optionsxpress.com') %></td>
+           <td><%= investment.xpath("xmlns:Price[1]/text()", 'xmlns' => 'http://oxbranch.optionsxpress.com') %></td>
+           <td><%= investment.xpath("xmlns:Change[1]/text()", 'xmlns' => 'http://oxbranch.optionsxpress.com') %></td>
+           <td><%= investment.xpath("xmlns:Value[1]/text()", 'xmlns' => 'http://oxbranch.optionsxpress.com') %></td>
+           <td><%= investment.xpath("xmlns:GainLoss[1]/text()", 'xmlns' => 'http://oxbranch.optionsxpress.com') %></td>
+         </tr>
+        <% end %>
+    </table>
+  </div>
+
+  <h2>Database (<%= @online_offline %>) as of <%= @all_investments[0].updated_at %></h2>
+
+  <div class="entry">
+    <table border="2">
+      <tr>
+        <th>id</th>
+        <th>xml</th>
+        <th>created_at</th>
+        <th>updated_at</th>
+      </tr>
+       <% for investment in @all_investments -%>
+         <tr>
+           <td><%= investment.id %></td>
+           <td><%= h(investment.xml) %></td>
+           <td><%= investment.created_at %></td>
+           <td><%= investment.updated_at %></td>
+         </tr>
+       <% end %>
+    </table>
+  </div>
+<% end %>

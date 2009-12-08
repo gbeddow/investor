@@ -1,0 +1,1130 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2009-09-16 19:34:00) [GET]
+Rendering template within layouts/application
+Rendering about/index
+Completed in 51ms (View: 50, DB: 0) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-09-16 19:34:05) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 84ms (View: 14, DB: 1) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-18 12:14:25) [GET]
+  [4;36;1mInvestment Load (157.6ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 171ms (View: 10, DB: 158) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-18 12:14:38) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-18 12:14:46) [GET]
+  [4;35;1mInvestment Load (12.1ms)[0m   [0mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 16ms (View: 1, DB: 12) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (74.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (343.1ms)[0m   [0;1mDROP DATABASE IF EXISTS `investor_test`[0m
+  [4;35;1mSQL (90.4ms)[0m   [0mCREATE DATABASE `investor_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (117.2ms)[0m   [0mCREATE TABLE `investments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `xml` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (39.9ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (27.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090916185325')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (53.3ms)[0m   [0;1mDROP DATABASE IF EXISTS `investor_test`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE DATABASE `investor_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE TABLE `investments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `xml` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090916185325')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:07:42) [GET]
+  [4;36;1mInvestment Load (24.0ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+  [4;35;1mInvestment Load (0.1ms)[0m   [0mSELECT * FROM `investments` LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+
+ActionView::TemplateError (Invalid or inclomplete context
+) on line #17 of app/views/admin/index.erb:
+14:         <th>Gain/Loss&nbsp;$</th>
+15:      </thead>
+16:      <tbody>
+17:        <% for investment in @xml.search('//security') -%>
+18:          <tr>
+19:            <td><%= investment.search("symbol").first.content %></td>
+20:            <td><%= investment.search("description").first.content %></td>
+
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:118:in `evaluate'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:118:in `xpath'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:115:in `map'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:115:in `xpath'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:82:in `search'
+    app/views/admin/index.erb:17
+
+Rendered rescues/_trace (36.8ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:27:55) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+  [4;35;1mInvestment Load (0.1ms)[0m   [0mSELECT * FROM `investments` LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.xml):
+  app/controllers/admin_controller.rb:8:in `index'
+
+Rendered rescues/_trace (26.7ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:28:19) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+  [4;35;1mInvestment Load (0.1ms)[0m   [0mSELECT * FROM `investments` LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.xml):
+  app/controllers/admin_controller.rb:8:in `index'
+
+Rendered rescues/_trace (26.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:29:02) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+  [4;35;1mInvestment Load (0.1ms)[0m   [0mSELECT * FROM `investments` LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.xml):
+  app/controllers/admin_controller.rb:8:in `index'
+
+Rendered rescues/_trace (26.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:30:32) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+  [4;35;1mInvestment Load (0.1ms)[0m   [0mSELECT * FROM `investments` LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.xml):
+  app/controllers/admin_controller.rb:8:in `index'
+
+Rendered rescues/_trace (26.7ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:31:16) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+
+ActionView::TemplateError (Invalid or inclomplete context
+) on line #20 of app/views/admin/index.erb:
+17:           <th>Gain/Loss&nbsp;$</th>
+18:        </thead>
+19:        <tbody>
+20:          <% for investment in @first_offline_investment_xml.search('//security') -%>
+21:            <tr>
+22:              <td><%= investment.search("symbol").first.content %></td>
+23:              <td><%= investment.search("description").first.content %></td>
+
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:118:in `evaluate'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:118:in `xpath'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:115:in `map'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:115:in `xpath'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:82:in `search'
+    app/views/admin/index.erb:20
+
+Rendered rescues/_trace (36.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:32:25) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+
+ActionView::TemplateError (undefined method `blank' for <?xml version="1.0"?>
+:Nokogiri::XML::Document) on line #1 of app/views/admin/index.erb:
+1: <% if @first_offline_investment_xml.blank %>
+2:   <h2>"ERROR: NO OFFLINE DATA: " + Time::now</h2>
+3: <% else %>
+4:   <h2>Offline Investments</h2>
+
+    app/views/admin/index.erb:1
+
+Rendered rescues/_trace (33.7ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:33:20) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+ERROR: compiling _run_erb_app47views47admin47index46erb RAISED compile error
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:3: syntax error, unexpected kELSE, expecting ')'
+ else ; @output_buffer.concat "\n"
+     ^
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:56: syntax error, unexpected kEND, expecting ')'
+ end ; @output_buffer.concat "\n"
+    ^
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:58: syntax error, unexpected kENSURE, expecting ')'
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:60: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47admin47index46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  if (@all_offline_investments == nil ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h2>\"ERROR: NO OFFLINE DATA: \" + Time::now</h2>\n"
+ else ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h2>Offline Investments</h2>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <div class=\"entry\">\n"
+@output_buffer.concat "    <table border=\"1\">\n"
+@output_buffer.concat "       <thead>\n"
+@output_buffer.concat "          <th>Symbol</th>\n"
+@output_buffer.concat "          <th>Description</th>\n"
+@output_buffer.concat "          <th>Stock</th>\n"
+@output_buffer.concat "          <th>Quantity</th>\n"
+@output_buffer.concat "          <th>Cost&nbsp;Basis</th>\n"
+@output_buffer.concat "          <th>Price</th>\n"
+@output_buffer.concat "          <th>Change</th>\n"
+@output_buffer.concat "          <th>Value</th>\n"
+@output_buffer.concat "          <th>Gain/Loss&nbsp;$</th>\n"
+@output_buffer.concat "       </thead>\n"
+@output_buffer.concat "       <tbody>\n"
+@output_buffer.concat "         ";  for investment in @first_offline_investment_xml.search('//security') 
+@output_buffer.concat "           <tr>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("symbol").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("description").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("stock").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("quantity").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("cost_basis").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("price").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("change").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("value").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("gain_loss").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "           </tr>\n"
+@output_buffer.concat "          ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "       </tbody>\n"
+@output_buffer.concat "    </table>\n"
+@output_buffer.concat "  </div>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <h2>Offline Investment Database (all)</h2>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <div class=\"entry\">\n"
+@output_buffer.concat "    <table border=\"1\">\n"
+@output_buffer.concat "       <thead>\n"
+@output_buffer.concat "         <th>id</th><th>xml</th><th>created_at</th><th>updated_at</th>\n"
+@output_buffer.concat "       </thead>\n"
+@output_buffer.concat "       <tbody>\n"
+@output_buffer.concat "         ";  for investment in @all_offline_investments 
+@output_buffer.concat "           <tr>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.id ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( h(investment.xml) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.created_at ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.updated_at ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "           </tr>\n"
+@output_buffer.concat "         ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "       </tbody>\n"
+@output_buffer.concat "    </table>\n"
+@output_buffer.concat "  </div>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/gbeddow/work/ror/investor/app/views/admin/index.erb:60:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:3: syntax error, unexpected kELSE, expecting ')'
+ else ; @output_buffer.concat "\n"
+     ^
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:56: syntax error, unexpected kEND, expecting ')'
+ end ; @output_buffer.concat "\n"
+    ^
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:58: syntax error, unexpected kENSURE, expecting ')'
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:60: syntax error, unexpected kEND, expecting ')') on line #3 of app/views/admin/index.erb:
+1: <% if (@all_offline_investments == nil %>
+2:   <h2>"ERROR: NO OFFLINE DATA: " + Time::now</h2>
+3: <% else %>
+4:   <h2>Offline Investments</h2>
+5: 
+6:   <div class="entry">
+
+    app/views/admin/index.erb:60:in `compile!'
+
+Rendered rescues/_trace (32.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:37:46) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+ERROR: compiling _run_erb_app47views47admin47index46erb RAISED compile error
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:3: syntax error, unexpected kELSE, expecting ')'
+ else ; @output_buffer.concat "\n"
+     ^
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:56: syntax error, unexpected kEND, expecting ')'
+ end ; @output_buffer.concat "\n"
+    ^
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:58: syntax error, unexpected kENSURE, expecting ')'
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:60: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47admin47index46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  if (@all_offline_investments == nil ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h2>ERROR: NO OFFLINE DATA: "; @output_buffer.concat(( Time::now ).to_s); @output_buffer.concat "</h2>\n"
+ else ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h2>Offline Investments</h2>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <div class=\"entry\">\n"
+@output_buffer.concat "    <table border=\"1\">\n"
+@output_buffer.concat "       <thead>\n"
+@output_buffer.concat "          <th>Symbol</th>\n"
+@output_buffer.concat "          <th>Description</th>\n"
+@output_buffer.concat "          <th>Stock</th>\n"
+@output_buffer.concat "          <th>Quantity</th>\n"
+@output_buffer.concat "          <th>Cost&nbsp;Basis</th>\n"
+@output_buffer.concat "          <th>Price</th>\n"
+@output_buffer.concat "          <th>Change</th>\n"
+@output_buffer.concat "          <th>Value</th>\n"
+@output_buffer.concat "          <th>Gain/Loss&nbsp;$</th>\n"
+@output_buffer.concat "       </thead>\n"
+@output_buffer.concat "       <tbody>\n"
+@output_buffer.concat "         ";  for investment in @first_offline_investment_xml.search('//security') 
+@output_buffer.concat "           <tr>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("symbol").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("description").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("stock").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("quantity").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("cost_basis").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("price").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("change").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("value").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("gain_loss").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "           </tr>\n"
+@output_buffer.concat "          ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "       </tbody>\n"
+@output_buffer.concat "    </table>\n"
+@output_buffer.concat "  </div>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <h2>Offline Investment Database (all)</h2>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <div class=\"entry\">\n"
+@output_buffer.concat "    <table border=\"1\">\n"
+@output_buffer.concat "       <thead>\n"
+@output_buffer.concat "         <th>id</th><th>xml</th><th>created_at</th><th>updated_at</th>\n"
+@output_buffer.concat "       </thead>\n"
+@output_buffer.concat "       <tbody>\n"
+@output_buffer.concat "         ";  for investment in @all_offline_investments 
+@output_buffer.concat "           <tr>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.id ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( h(investment.xml) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.created_at ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.updated_at ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "           </tr>\n"
+@output_buffer.concat "         ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "       </tbody>\n"
+@output_buffer.concat "    </table>\n"
+@output_buffer.concat "  </div>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/gbeddow/work/ror/investor/app/views/admin/index.erb:60:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:3: syntax error, unexpected kELSE, expecting ')'
+ else ; @output_buffer.concat "\n"
+     ^
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:56: syntax error, unexpected kEND, expecting ')'
+ end ; @output_buffer.concat "\n"
+    ^
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:58: syntax error, unexpected kENSURE, expecting ')'
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:60: syntax error, unexpected kEND, expecting ')') on line #3 of app/views/admin/index.erb:
+1: <% if (@all_offline_investments == nil %>
+2:   <h2>ERROR: NO OFFLINE DATA: <%= Time::now %></h2>
+3: <% else %>
+4:   <h2>Offline Investments</h2>
+5: 
+6:   <div class="entry">
+
+    app/views/admin/index.erb:60:in `compile!'
+
+Rendered rescues/_trace (37.4ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:38:26) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+ERROR: compiling _run_erb_app47views47admin47index46erb RAISED compile error
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:3: syntax error, unexpected kELSE, expecting ')'
+ else ; @output_buffer.concat "\n"
+     ^
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:56: syntax error, unexpected kEND, expecting ')'
+ end ; @output_buffer.concat "\n"
+    ^
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:58: syntax error, unexpected kENSURE, expecting ')'
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:60: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47admin47index46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  if (@all_offline_investments == nil ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h2>ERROR: NO OFFLINE DATA</h2>\n"
+ else ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h2>Offline Investments</h2>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <div class=\"entry\">\n"
+@output_buffer.concat "    <table border=\"1\">\n"
+@output_buffer.concat "       <thead>\n"
+@output_buffer.concat "          <th>Symbol</th>\n"
+@output_buffer.concat "          <th>Description</th>\n"
+@output_buffer.concat "          <th>Stock</th>\n"
+@output_buffer.concat "          <th>Quantity</th>\n"
+@output_buffer.concat "          <th>Cost&nbsp;Basis</th>\n"
+@output_buffer.concat "          <th>Price</th>\n"
+@output_buffer.concat "          <th>Change</th>\n"
+@output_buffer.concat "          <th>Value</th>\n"
+@output_buffer.concat "          <th>Gain/Loss&nbsp;$</th>\n"
+@output_buffer.concat "       </thead>\n"
+@output_buffer.concat "       <tbody>\n"
+@output_buffer.concat "         ";  for investment in @first_offline_investment_xml.search('//security') 
+@output_buffer.concat "           <tr>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("symbol").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("description").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("stock").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("quantity").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("cost_basis").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("price").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("change").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("value").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.search("gain_loss").first.content ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "           </tr>\n"
+@output_buffer.concat "          ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "       </tbody>\n"
+@output_buffer.concat "    </table>\n"
+@output_buffer.concat "  </div>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <h2>Offline Investment Database (all)</h2>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <div class=\"entry\">\n"
+@output_buffer.concat "    <table border=\"1\">\n"
+@output_buffer.concat "       <thead>\n"
+@output_buffer.concat "         <th>id</th><th>xml</th><th>created_at</th><th>updated_at</th>\n"
+@output_buffer.concat "       </thead>\n"
+@output_buffer.concat "       <tbody>\n"
+@output_buffer.concat "         ";  for investment in @all_offline_investments 
+@output_buffer.concat "           <tr>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.id ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( h(investment.xml) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.created_at ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "             <td>"; @output_buffer.concat(( investment.updated_at ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "           </tr>\n"
+@output_buffer.concat "         ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "       </tbody>\n"
+@output_buffer.concat "    </table>\n"
+@output_buffer.concat "  </div>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/gbeddow/work/ror/investor/app/views/admin/index.erb:60:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:3: syntax error, unexpected kELSE, expecting ')'
+ else ; @output_buffer.concat "\n"
+     ^
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:56: syntax error, unexpected kEND, expecting ')'
+ end ; @output_buffer.concat "\n"
+    ^
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:58: syntax error, unexpected kENSURE, expecting ')'
+/Users/gbeddow/work/ror/investor/app/views/admin/index.erb:60: syntax error, unexpected kEND, expecting ')') on line #3 of app/views/admin/index.erb:
+1: <% if (@all_offline_investments == nil %>
+2:   <h2>ERROR: NO OFFLINE DATA</h2>
+3: <% else %>
+4:   <h2>Offline Investments</h2>
+5: 
+6:   <div class="entry">
+
+    app/views/admin/index.erb:60:in `compile!'
+
+Rendered rescues/_trace (32.4ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:42:47) [GET]
+  [4;36;1mInvestment Load (0.4ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+
+ActionView::TemplateError (Invalid or inclomplete context
+) on line #20 of app/views/admin/index.erb:
+17:           <th>Gain/Loss&nbsp;$</th>
+18:        </thead>
+19:        <tbody>
+20:          <% for investment in @first_offline_investment_xml.search('//security') -%>
+21:            <tr>
+22:              <td><%= investment.search("symbol").first.content %></td>
+23:              <td><%= investment.search("description").first.content %></td>
+
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:118:in `evaluate'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:118:in `xpath'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:115:in `map'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:115:in `xpath'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:82:in `search'
+    app/views/admin/index.erb:20
+
+Rendered rescues/_trace (36.9ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:44:31) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+
+ActionView::TemplateError (Invalid or inclomplete context
+) on line #18 of app/views/admin/index.erb:
+15:           <th>Gain/Loss&nbsp;$</th>
+16:        </thead>
+17:        <tbody>
+18:          <% for investment in @first_offline_investment_xml.search('//security') -%>
+19:            <tr>
+20:              <td><%= investment.search("symbol").first.content %></td>
+21:              <td><%= investment.search("description").first.content %></td>
+
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:118:in `evaluate'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:118:in `xpath'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:115:in `map'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:115:in `xpath'
+    nokogiri (1.2.3) lib/nokogiri/xml/node.rb:82:in `search'
+    app/views/admin/index.erb:18
+
+Rendered rescues/_trace (37.7ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:45:20) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:46:09) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+
+ActionView::TemplateError (undefined method `empty' for []:Array) on line #1 of app/views/admin/index.erb:
+1: <p>@all_offline_investments.empty=<%= debug @all_offline_investments.empty %></p>
+
+    app/views/admin/index.erb:1
+
+Rendered rescues/_trace (34.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:47:01) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:48:54) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+  [4;35;1mInvestment Load (0.1ms)[0m   [0mSELECT * FROM `investments` LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.xml):
+  app/controllers/admin_controller.rb:8:in `index'
+
+Rendered rescues/_trace (27.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:49:58) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 13ms (View: 10, DB: 1) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:50:32) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 13ms (View: 10, DB: 1) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 16:55:31) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 13ms (View: 10, DB: 1) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (35.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (153.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `investor_test`[0m
+  [4;35;1mSQL (33.0ms)[0m   [0mCREATE DATABASE `investor_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE `investments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `xml` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090916185325')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 17:06:22) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 13ms (View: 10, DB: 1) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mInvestment Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `investments`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-09-20 21:50:42) [GET]
+  [4;36;1mInvestment Load (0.6ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 322ms (View: 293, DB: 1) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-10-07 08:53:35) [GET]
+  [4;36;1mInvestment Load (127.9ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 366ms (View: 199, DB: 128) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-10-07 08:58:20) [GET]
+  [4;35;1mInvestment Load (0.3ms)[0m   [0mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-10-07 08:58:27) [POST]
+  Parameters: {"commit"=>"Login", "sUserName"=>"gregbeddow", "sPassword"=>"164200aa", "authenticity_token"=>"9VYAAsp/6zQu7BRHUfBzZNeTsh4CwXoRflPTh0vsVWI="}
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+  [4;35;1mInvestment Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `investments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mInvestment Create (1.6ms)[0m   [0mINSERT INTO `investments` (`xml`, `updated_at`, `created_at`) VALUES('<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ArrayOfCServPosition xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://oxbranch.optionsxpress.com\">\r\n <CServPosition>\r\n <SecurityType>1</SecurityType>\r\n <PositionID>20228922</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>AMZN</Symbol>\r\n <UnderlyingSecurity>N/A</UnderlyingSecurity>\r\n <SymbolDescr>AMAZON COM</SymbolDescr>\r\n <Quantity>30</Quantity>\r\n <optionmultiplier>0</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall />\r\n <StrikePrice>0</StrikePrice>\r\n <ExpMonth />\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber>023135106</CusipNumber>\r\n <CostBasis>84</CostBasis>\r\n <Bid>93.49</Bid>\r\n <Ask>93.51</Ask>\r\n <Last>93.496</Last>\r\n <Price>93.496</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>284.88</GainLoss>\r\n <Value>2804.88</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>12:00:00 AM</ExpirationDate>\r\n <High>94.48</High>\r\n <Low>91.15</Low>\r\n <Volume>4006364</Volume>\r\n <Change>2.586</Change>\r\n <Close>90.91</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>0</UnderlyingBid>\r\n <UnderlyingAsk>0</UnderlyingAsk>\r\n <UnderlyingLast>0</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>3</SecurityType>\r\n <PositionID>20306476</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>.AFUDD</Symbol>\r\n <UnderlyingSecurity>FORM</UnderlyingSecurity>\r\n <SymbolDescr>FORM APR 2010 20 Call</SymbolDescr>\r\n <Quantity>5</Quantity>\r\n <optionmultiplier>100</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall>C</PutOrCall>\r\n <StrikePrice>20</StrikePrice>\r\n <ExpMonth>APR</ExpMonth>\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber />\r\n <CostBasis>5.98</CostBasis>\r\n <Bid>3.6</Bid>\r\n <Ask>3.8</Ask>\r\n <Last>3.7</Last>\r\n <Price>3.7</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>-1140</GainLoss>\r\n <Value>1850</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>4/16/2010</ExpirationDate>\r\n <High>4.07</High>\r\n <Low>3.68</Low>\r\n <Volume>31</Volume>\r\n <Change>-0.3</Change>\r\n <Close>4</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>21.25</UnderlyingBid>\r\n <UnderlyingAsk>21.26</UnderlyingAsk>\r\n <UnderlyingLast>21.26</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>3</SecurityType>\r\n <PositionID>20306478</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>.AFUDE</Symbol>\r\n <UnderlyingSecurity>FORM</UnderlyingSecurity>\r\n <SymbolDescr>FORM APR 2010 25 Call</SymbolDescr>\r\n <Quantity>-5</Quantity>\r\n <optionmultiplier>100</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall>C</PutOrCall>\r\n <StrikePrice>25</StrikePrice>\r\n <ExpMonth>APR</ExpMonth>\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber />\r\n <CostBasis>2.98</CostBasis>\r\n <Bid>1.45</Bid>\r\n <Ask>1.65</Ask>\r\n <Last>1.53</Last>\r\n <Price>1.53</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>725</GainLoss>\r\n <Value>-765</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>4/16/2010</ExpirationDate>\r\n <High>1.67</High>\r\n <Low>1.5</Low>\r\n <Volume>37</Volume>\r\n <Change>-0.12</Change>\r\n <Close>1.65</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>21.25</UnderlyingBid>\r\n <UnderlyingAsk>21.26</UnderlyingAsk>\r\n <UnderlyingLast>21.26</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>4</SecurityType>\r\n <PositionID>20158297</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>LOGI</Symbol>\r\n <UnderlyingSecurity>N/A</UnderlyingSecurity>\r\n <SymbolDescr>LOGITECH INTERNATIONAL SA</SymbolDescr>\r\n <Quantity>100</Quantity>\r\n <optionmultiplier>0</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall />\r\n <StrikePrice>0</StrikePrice>\r\n <ExpMonth />\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber>H50430232</CusipNumber>\r\n <CostBasis>18.07</CostBasis>\r\n <Bid>17.41</Bid>\r\n <Ask>17.41</Ask>\r\n <Last>17.4</Last>\r\n <Price>17.41</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>-66</GainLoss>\r\n <Value>1741</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>12:00:00 AM</ExpirationDate>\r\n <High>17.71</High>\r\n <Low>17.3</Low>\r\n <Volume>858613</Volume>\r\n <Change>-0.5</Change>\r\n <Close>17.9</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>0</UnderlyingBid>\r\n <UnderlyingAsk>0</UnderlyingAsk>\r\n <UnderlyingLast>0</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>4</SecurityType>\r\n <PositionID>20158298</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>.LQGLW</Symbol>\r\n <UnderlyingSecurity>LOGI</UnderlyingSecurity>\r\n <SymbolDescr>LOGI DEC 17.5 Call</SymbolDescr>\r\n <Quantity>-1</Quantity>\r\n <optionmultiplier>100</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall>C</PutOrCall>\r\n <StrikePrice>17.5</StrikePrice>\r\n <ExpMonth>DEC</ExpMonth>\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber />\r\n <CostBasis>1.87</CostBasis>\r\n <Bid>1.25</Bid>\r\n <Ask>1.4</Ask>\r\n <Last>1.55</Last>\r\n <Price>1.4</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>47</GainLoss>\r\n <Value>-140</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>12/18/2009</ExpirationDate>\r\n <High>0</High>\r\n <Low>0</Low>\r\n <Volume>0</Volume>\r\n <Change>0</Change>\r\n <Close>1.55</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>17.41</UnderlyingBid>\r\n <UnderlyingAsk>17.41</UnderlyingAsk>\r\n <UnderlyingLast>17.4</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>2</SecurityType>\r\n <PositionID>20214037</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>.WUWW</Symbol>\r\n <UnderlyingSecurity>WU</UnderlyingSecurity>\r\n <SymbolDescr>WU NOV 17.5 Put</SymbolDescr>\r\n <Quantity>-2</Quantity>\r\n <optionmultiplier>100</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall>P</PutOrCall>\r\n <StrikePrice>17.5</StrikePrice>\r\n <ExpMonth>NOV</ExpMonth>\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber />\r\n <CostBasis>0.75</CostBasis>\r\n <Bid>0.55</Bid>\r\n <Ask>0.65</Ask>\r\n <Last>0.6</Last>\r\n <Price>0.6</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>30</GainLoss>\r\n <Value>-120</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>11/20/2009</ExpirationDate>\r\n <High>0.6</High>\r\n <Low>0.5</Low>\r\n <Volume>8</Volume>\r\n <Change>0</Change>\r\n <Close>0.6</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>18.58</UnderlyingBid>\r\n <UnderlyingAsk>18.59</UnderlyingAsk>\r\n <UnderlyingLast>18.59</UnderlyingLast>\r\n </CServPosition>\r\n</ArrayOfCServPosition>', '2009-10-07 15:58:39', '2009-10-07 15:58:39')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mInvestment Load (0.4ms)[0m   [0mSELECT * FROM `investments` ORDER BY updated_at[0m
+Redirected to http://localhost:3000/admin
+Completed in 11902ms (DB: 5) | 302 Found [http://localhost/admin/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-10-07 08:58:39) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+  [4;35;1mInvestment Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `investments`[0m
+Completed in 188ms (View: 183, DB: 2) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-10-07 12:06:07) [POST]
+  Parameters: {"commit"=>"Login", "sUserName"=>"gregbeddow", "sPassword"=>"164200aa", "authenticity_token"=>"9VYAAsp/6zQu7BRHUfBzZNeTsh4CwXoRflPTh0vsVWI="}
+  [4;36;1mInvestment Load (0.4ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+  [4;35;1mInvestment Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `investments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mInvestment Update (17.3ms)[0m   [0mUPDATE `investments` SET `updated_at` = '2009-10-07 19:06:09', `xml` = '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ArrayOfCServPosition xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://oxbranch.optionsxpress.com\">\r\n <CServPosition>\r\n <SecurityType>1</SecurityType>\r\n <PositionID>20228922</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>AMZN</Symbol>\r\n <UnderlyingSecurity>N/A</UnderlyingSecurity>\r\n <SymbolDescr>AMAZON COM</SymbolDescr>\r\n <Quantity>30</Quantity>\r\n <optionmultiplier>0</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall />\r\n <StrikePrice>0</StrikePrice>\r\n <ExpMonth />\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber>023135106</CusipNumber>\r\n <CostBasis>84</CostBasis>\r\n <Bid>93.37</Bid>\r\n <Ask>93.38</Ask>\r\n <Last>93.38</Last>\r\n <Price>93.37</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>281.1</GainLoss>\r\n <Value>2801.1</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>12:00:00 AM</ExpirationDate>\r\n <High>94.48</High>\r\n <Low>91.15</Low>\r\n <Volume>5970597</Volume>\r\n <Change>2.47</Change>\r\n <Close>90.91</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>0</UnderlyingBid>\r\n <UnderlyingAsk>0</UnderlyingAsk>\r\n <UnderlyingLast>0</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>3</SecurityType>\r\n <PositionID>20306476</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>.AFUDD</Symbol>\r\n <UnderlyingSecurity>FORM</UnderlyingSecurity>\r\n <SymbolDescr>FORM APR 2010 20 Call</SymbolDescr>\r\n <Quantity>5</Quantity>\r\n <optionmultiplier>100</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall>C</PutOrCall>\r\n <StrikePrice>20</StrikePrice>\r\n <ExpMonth>APR</ExpMonth>\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber />\r\n <CostBasis>5.98</CostBasis>\r\n <Bid>3.7</Bid>\r\n <Ask>3.9</Ask>\r\n <Last>3.9</Last>\r\n <Price>3.7</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>-1140</GainLoss>\r\n <Value>1850</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>4/16/2010</ExpirationDate>\r\n <High>4.07</High>\r\n <Low>3.68</Low>\r\n <Volume>58</Volume>\r\n <Change>-0.1</Change>\r\n <Close>4</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>21.48</UnderlyingBid>\r\n <UnderlyingAsk>21.49</UnderlyingAsk>\r\n <UnderlyingLast>21.4801</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>3</SecurityType>\r\n <PositionID>20306478</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>.AFUDE</Symbol>\r\n <UnderlyingSecurity>FORM</UnderlyingSecurity>\r\n <SymbolDescr>FORM APR 2010 25 Call</SymbolDescr>\r\n <Quantity>-5</Quantity>\r\n <optionmultiplier>100</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall>C</PutOrCall>\r\n <StrikePrice>25</StrikePrice>\r\n <ExpMonth>APR</ExpMonth>\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber />\r\n <CostBasis>2.98</CostBasis>\r\n <Bid>1.5</Bid>\r\n <Ask>1.7</Ask>\r\n <Last>1.57</Last>\r\n <Price>1.57</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>705</GainLoss>\r\n <Value>-785</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>4/16/2010</ExpirationDate>\r\n <High>1.67</High>\r\n <Low>1.5</Low>\r\n <Volume>42</Volume>\r\n <Change>-0.0799999999999998</Change>\r\n <Close>1.65</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>21.48</UnderlyingBid>\r\n <UnderlyingAsk>21.49</UnderlyingAsk>\r\n <UnderlyingLast>21.4801</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>4</SecurityType>\r\n <PositionID>20158297</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>LOGI</Symbol>\r\n <UnderlyingSecurity>N/A</UnderlyingSecurity>\r\n <SymbolDescr>LOGITECH INTERNATIONAL SA</SymbolDescr>\r\n <Quantity>100</Quantity>\r\n <optionmultiplier>0</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall />\r\n <StrikePrice>0</StrikePrice>\r\n <ExpMonth />\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber>H50430232</CusipNumber>\r\n <CostBasis>18.07</CostBasis>\r\n <Bid>17.36</Bid>\r\n <Ask>17.37</Ask>\r\n <Last>17.36</Last>\r\n <Price>17.36</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>-71</GainLoss>\r\n <Value>1736</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>12:00:00 AM</ExpirationDate>\r\n <High>17.71</High>\r\n <Low>17.3</Low>\r\n <Volume>1251268</Volume>\r\n <Change>-0.539999999999999</Change>\r\n <Close>17.9</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>0</UnderlyingBid>\r\n <UnderlyingAsk>0</UnderlyingAsk>\r\n <UnderlyingLast>0</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>4</SecurityType>\r\n <PositionID>20158298</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>.LQGLW</Symbol>\r\n <UnderlyingSecurity>LOGI</UnderlyingSecurity>\r\n <SymbolDescr>LOGI DEC 17.5 Call</SymbolDescr>\r\n <Quantity>-1</Quantity>\r\n <optionmultiplier>100</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall>C</PutOrCall>\r\n <StrikePrice>17.5</StrikePrice>\r\n <ExpMonth>DEC</ExpMonth>\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber />\r\n <CostBasis>1.87</CostBasis>\r\n <Bid>1.25</Bid>\r\n <Ask>1.4</Ask>\r\n <Last>1.25</Last>\r\n <Price>1.4</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>47</GainLoss>\r\n <Value>-140</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>12/18/2009</ExpirationDate>\r\n <High>1.25</High>\r\n <Low>1.25</Low>\r\n <Volume>1</Volume>\r\n <Change>-0.3</Change>\r\n <Close>1.55</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>17.36</UnderlyingBid>\r\n <UnderlyingAsk>17.37</UnderlyingAsk>\r\n <UnderlyingLast>17.36</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>2</SecurityType>\r\n <PositionID>20214037</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>.WUWW</Symbol>\r\n <UnderlyingSecurity>WU</UnderlyingSecurity>\r\n <SymbolDescr>WU NOV 17.5 Put</SymbolDescr>\r\n <Quantity>-2</Quantity>\r\n <optionmultiplier>100</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall>P</PutOrCall>\r\n <StrikePrice>17.5</StrikePrice>\r\n <ExpMonth>NOV</ExpMonth>\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber />\r\n <CostBasis>0.75</CostBasis>\r\n <Bid>0.55</Bid>\r\n <Ask>0.65</Ask>\r\n <Last>0.59</Last>\r\n <Price>0.59</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>32</GainLoss>\r\n <Value>-118</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>11/20/2009</ExpirationDate>\r\n <High>0.6</High>\r\n <Low>0.5</Low>\r\n <Volume>18</Volume>\r\n <Change>-0.01</Change>\r\n <Close>0.6</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>18.62</UnderlyingBid>\r\n <UnderlyingAsk>18.63</UnderlyingAsk>\r\n <UnderlyingLast>18.63</UnderlyingLast>\r\n </CServPosition>\r\n</ArrayOfCServPosition>' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mInvestment Update (0.2ms)[0m   [0;1mUPDATE `investments` SET `updated_at` = '2009-10-07 19:06:09' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mInvestment Load (0.2ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Redirected to http://localhost:3000/admin
+Completed in 2140ms (DB: 21) | 302 Found [http://localhost/admin/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-10-07 12:06:09) [GET]
+  [4;35;1mInvestment Load (0.4ms)[0m   [0mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+  [4;36;1mInvestment Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `investments`[0m
+Completed in 50ms (View: 45, DB: 2) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-10-07 12:08:08) [GET]
+  [4;35;1mInvestment Load (0.4ms)[0m   [0mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+  [4;36;1mInvestment Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `investments`[0m
+Completed in 70ms (View: 65, DB: 2) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-10-07 12:08:15) [POST]
+  Parameters: {"commit"=>"Login", "sUserName"=>"gregbeddow", "sPassword"=>"164200aa", "authenticity_token"=>"9VYAAsp/6zQu7BRHUfBzZNeTsh4CwXoRflPTh0vsVWI="}
+  [4;35;1mInvestment Load (0.4ms)[0m   [0mSELECT * FROM `investments` ORDER BY updated_at[0m
+  [4;36;1mInvestment Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `investments`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mInvestment Update (1.0ms)[0m   [0;1mUPDATE `investments` SET `updated_at` = '2009-10-07 19:08:17', `xml` = '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ArrayOfCServPosition xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://oxbranch.optionsxpress.com\">\r\n <CServPosition>\r\n <SecurityType>1</SecurityType>\r\n <PositionID>20228922</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>AMZN</Symbol>\r\n <UnderlyingSecurity>N/A</UnderlyingSecurity>\r\n <SymbolDescr>AMAZON COM</SymbolDescr>\r\n <Quantity>30</Quantity>\r\n <optionmultiplier>0</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall />\r\n <StrikePrice>0</StrikePrice>\r\n <ExpMonth />\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber>023135106</CusipNumber>\r\n <CostBasis>84</CostBasis>\r\n <Bid>93.48</Bid>\r\n <Ask>93.5</Ask>\r\n <Last>93.49</Last>\r\n <Price>93.49</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>284.7</GainLoss>\r\n <Value>2804.7</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>12:00:00 AM</ExpirationDate>\r\n <High>94.48</High>\r\n <Low>91.15</Low>\r\n <Volume>5995659</Volume>\r\n <Change>2.58</Change>\r\n <Close>90.91</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>0</UnderlyingBid>\r\n <UnderlyingAsk>0</UnderlyingAsk>\r\n <UnderlyingLast>0</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>3</SecurityType>\r\n <PositionID>20306476</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>.AFUDD</Symbol>\r\n <UnderlyingSecurity>FORM</UnderlyingSecurity>\r\n <SymbolDescr>FORM APR 2010 20 Call</SymbolDescr>\r\n <Quantity>5</Quantity>\r\n <optionmultiplier>100</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall>C</PutOrCall>\r\n <StrikePrice>20</StrikePrice>\r\n <ExpMonth>APR</ExpMonth>\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber />\r\n <CostBasis>5.98</CostBasis>\r\n <Bid>3.7</Bid>\r\n <Ask>3.9</Ask>\r\n <Last>3.9</Last>\r\n <Price>3.7</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>-1140</GainLoss>\r\n <Value>1850</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>4/16/2010</ExpirationDate>\r\n <High>4.07</High>\r\n <Low>3.68</Low>\r\n <Volume>58</Volume>\r\n <Change>-0.1</Change>\r\n <Close>4</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>21.51</UnderlyingBid>\r\n <UnderlyingAsk>21.53</UnderlyingAsk>\r\n <UnderlyingLast>21.52</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>3</SecurityType>\r\n <PositionID>20306478</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>.AFUDE</Symbol>\r\n <UnderlyingSecurity>FORM</UnderlyingSecurity>\r\n <SymbolDescr>FORM APR 2010 25 Call</SymbolDescr>\r\n <Quantity>-5</Quantity>\r\n <optionmultiplier>100</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall>C</PutOrCall>\r\n <StrikePrice>25</StrikePrice>\r\n <ExpMonth>APR</ExpMonth>\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber />\r\n <CostBasis>2.98</CostBasis>\r\n <Bid>1.5</Bid>\r\n <Ask>1.7</Ask>\r\n <Last>1.57</Last>\r\n <Price>1.57</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>705</GainLoss>\r\n <Value>-785</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>4/16/2010</ExpirationDate>\r\n <High>1.67</High>\r\n <Low>1.5</Low>\r\n <Volume>42</Volume>\r\n <Change>-0.0799999999999998</Change>\r\n <Close>1.65</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>21.51</UnderlyingBid>\r\n <UnderlyingAsk>21.53</UnderlyingAsk>\r\n <UnderlyingLast>21.52</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>4</SecurityType>\r\n <PositionID>20158297</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>LOGI</Symbol>\r\n <UnderlyingSecurity>N/A</UnderlyingSecurity>\r\n <SymbolDescr>LOGITECH INTERNATIONAL SA</SymbolDescr>\r\n <Quantity>100</Quantity>\r\n <optionmultiplier>0</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall />\r\n <StrikePrice>0</StrikePrice>\r\n <ExpMonth />\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber>H50430232</CusipNumber>\r\n <CostBasis>18.07</CostBasis>\r\n <Bid>17.35</Bid>\r\n <Ask>17.36</Ask>\r\n <Last>17.35</Last>\r\n <Price>17.35</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>-71.9999999999998</GainLoss>\r\n <Value>1735</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>12:00:00 AM</ExpirationDate>\r\n <High>17.71</High>\r\n <Low>17.3</Low>\r\n <Volume>1254168</Volume>\r\n <Change>-0.549999999999997</Change>\r\n <Close>17.9</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>0</UnderlyingBid>\r\n <UnderlyingAsk>0</UnderlyingAsk>\r\n <UnderlyingLast>0</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>4</SecurityType>\r\n <PositionID>20158298</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>.LQGLW</Symbol>\r\n <UnderlyingSecurity>LOGI</UnderlyingSecurity>\r\n <SymbolDescr>LOGI DEC 17.5 Call</SymbolDescr>\r\n <Quantity>-1</Quantity>\r\n <optionmultiplier>100</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall>C</PutOrCall>\r\n <StrikePrice>17.5</StrikePrice>\r\n <ExpMonth>DEC</ExpMonth>\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber />\r\n <CostBasis>1.87</CostBasis>\r\n <Bid>1.25</Bid>\r\n <Ask>1.35</Ask>\r\n <Last>1.25</Last>\r\n <Price>1.35</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>52</GainLoss>\r\n <Value>-135</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>12/18/2009</ExpirationDate>\r\n <High>1.25</High>\r\n <Low>1.25</Low>\r\n <Volume>1</Volume>\r\n <Change>-0.3</Change>\r\n <Close>1.55</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>17.35</UnderlyingBid>\r\n <UnderlyingAsk>17.36</UnderlyingAsk>\r\n <UnderlyingLast>17.35</UnderlyingLast>\r\n </CServPosition>\r\n <CServPosition>\r\n <SecurityType>2</SecurityType>\r\n <PositionID>20214037</PositionID>\r\n <AccountID>0</AccountID>\r\n <Symbol>.WUWW</Symbol>\r\n <UnderlyingSecurity>WU</UnderlyingSecurity>\r\n <SymbolDescr>WU NOV 17.5 Put</SymbolDescr>\r\n <Quantity>-2</Quantity>\r\n <optionmultiplier>100</optionmultiplier>\r\n <InsertDate>0001-01-01T00:00:00.0000000-06:00</InsertDate>\r\n <PutOrCall>P</PutOrCall>\r\n <StrikePrice>17.5</StrikePrice>\r\n <ExpMonth>NOV</ExpMonth>\r\n <ExpYear>0</ExpYear>\r\n <CusipNumber />\r\n <CostBasis>0.75</CostBasis>\r\n <Bid>0.55</Bid>\r\n <Ask>0.65</Ask>\r\n <Last>0.59</Last>\r\n <Price>0.59</Price>\r\n <DisplayInTick>False</DisplayInTick>\r\n <DisplayDenominator>0</DisplayDenominator>\r\n <GainLoss>32</GainLoss>\r\n <Value>-118</Value>\r\n <QuoteHasData>True</QuoteHasData>\r\n <GoalPercentageGain>0</GoalPercentageGain>\r\n <GoalPercentageLoss>0</GoalPercentageLoss>\r\n <ExpirationDate>11/20/2009</ExpirationDate>\r\n <High>0.6</High>\r\n <Low>0.5</Low>\r\n <Volume>18</Volume>\r\n <Change>-0.01</Change>\r\n <Close>0.6</Close>\r\n <MarketId>0</MarketId>\r\n <PriceFormat />\r\n <UnderlyingBid>18.64</UnderlyingBid>\r\n <UnderlyingAsk>18.65</UnderlyingAsk>\r\n <UnderlyingLast>18.65</UnderlyingLast>\r\n </CServPosition>\r\n</ArrayOfCServPosition>' WHERE `id` = 1[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mInvestment Update (0.2ms)[0m   [0mUPDATE `investments` SET `updated_at` = '2009-10-07 19:08:17' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mInvestment Load (0.2ms)[0m   [0mSELECT * FROM `investments` ORDER BY updated_at[0m
+Redirected to http://localhost:3000/admin
+Completed in 2394ms (DB: 5) | 302 Found [http://localhost/admin/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-10-07 12:08:17) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+  [4;35;1mInvestment Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `investments`[0m
+Completed in 18ms (View: 13, DB: 2) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (19.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (8.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-11-11 13:45:02) [GET]
+  [4;36;1mInvestment Load (67.7ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+  [4;35;1mInvestment Columns (57.2ms)[0m   [0mSHOW FIELDS FROM `investments`[0m
+Completed in 646ms (View: 506, DB: 153) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#signin (for 127.0.0.1 at 2009-11-11 14:04:43) [POST]
+  Parameters: {"commit"=>"Sign In", "sUserName"=>"gregbeddow", "sPassword"=>"164200aa", "authenticity_token"=>"l9Rh/x1UmlrlXFP2BiGiboPWL/gxPEsUIrMPwaUWZBI="}
+Redirected to http://localhost:3000/admin
+Completed in 1512ms (DB: 0) | 302 Found [http://localhost/admin/signin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-11-11 14:04:45) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+  [4;35;1mInvestment Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `investments`[0m
+Completed in 65ms (View: 61, DB: 2) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#signin (for 127.0.0.1 at 2009-11-11 14:05:24) [POST]
+  Parameters: {"commit"=>"Sign In", "sUserName"=>"gregbeddow", "sPassword"=>"164200aa", "authenticity_token"=>"l9Rh/x1UmlrlXFP2BiGiboPWL/gxPEsUIrMPwaUWZBI="}
+Redirected to http://localhost:3000/admin
+Completed in 807ms (DB: 0) | 302 Found [http://localhost/admin/signin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-11-11 14:05:25) [GET]
+  [4;36;1mInvestment Load (0.4ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+  [4;35;1mInvestment Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `investments`[0m
+Completed in 18ms (View: 13, DB: 2) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (54.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-11-25 08:06:21) [GET]
+  [4;36;1mInvestment Load (351.8ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+  [4;35;1mInvestment Columns (66.0ms)[0m   [0mSHOW FIELDS FROM `investments`[0m
+Completed in 1067ms (View: 635, DB: 473) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#signin (for 127.0.0.1 at 2009-11-25 08:06:35) [POST]
+  Parameters: {"commit"=>"Sign In", "sUserName"=>"gregbeddow", "sPassword"=>"164200aa", "authenticity_token"=>"l9Rh/x1UmlrlXFP2BiGiboPWL/gxPEsUIrMPwaUWZBI="}
+Redirected to http://localhost:3000/admin
+Completed in 936ms (DB: 1) | 302 Found [http://localhost/admin/signin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-11-25 08:06:36) [GET]
+  [4;36;1mInvestment Load (0.7ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+  [4;35;1mInvestment Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `investments`[0m
+Completed in 67ms (View: 61, DB: 2) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#signin (for 127.0.0.1 at 2009-11-25 08:06:44) [POST]
+  Parameters: {"commit"=>"Sign In", "sUserName"=>"gregbeddow", "sPassword"=>"164200aa", "authenticity_token"=>"l9Rh/x1UmlrlXFP2BiGiboPWL/gxPEsUIrMPwaUWZBI="}
+Redirected to http://localhost:3000/admin
+Completed in 475ms (DB: 0) | 302 Found [http://localhost/admin/signin]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-11-25 08:06:44) [GET]
+  [4;36;1mInvestment Load (0.7ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+  [4;35;1mInvestment Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `investments`[0m
+Completed in 21ms (View: 13, DB: 4) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#signin (for 127.0.0.1 at 2009-11-25 08:06:57) [POST]
+  Parameters: {"commit"=>"Sign In", "sUserName"=>"gregbeddow", "sPassword"=>"164200aa", "authenticity_token"=>"l9Rh/x1UmlrlXFP2BiGiboPWL/gxPEsUIrMPwaUWZBI="}
+Redirected to http://localhost:3000/admin
+Completed in 452ms (DB: 0) | 302 Found [http://localhost/admin/signin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-11-25 08:06:57) [GET]
+  [4;36;1mInvestment Load (0.3ms)[0m   [0;1mSELECT * FROM `investments` ORDER BY updated_at[0m
+Rendering template within layouts/application
+Rendering admin/index
+  [4;35;1mInvestment Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `investments`[0m
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/admin]
