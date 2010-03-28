@@ -5,7 +5,6 @@ require "erb"
 require 'rubygems'
 require 'nokogiri'
 
-$sessionID = ""
 $welcomeMsg = ""
 
 class AdminController < ApplicationController
@@ -15,7 +14,10 @@ class AdminController < ApplicationController
     @online_offline = "offline"
 
     if (!$sessionID.blank?)
+      #logger.debug("#{Time.now} index: $sessionID is NOT blank")
       getAccountData($sessionID)
+    else
+      logger.debug("#{Time.now} index: $sessionID IS blank")
     end
 
     @all_investments = Investment.find_all
@@ -63,6 +65,7 @@ class AdminController < ApplicationController
       #logger.debug("#{Time.now} signin: @errorMsg = #{@errorMsg}")
 
       if (@errorMsg.blank?)
+        #logger.debug("#{Time.now} signin: @errorMsg IS blank")
         $sessionID = sessionID
         $welcomeMsg =
           "Welcome " +
@@ -70,6 +73,8 @@ class AdminController < ApplicationController
           xml.xpath('//xmlns:CAppLogin/xmlns:LastName/text()', 'xmlns' => 'http://oxbranch.optionsxpress.com').to_s + ", " +
           "Account " +
           xml.xpath('//xmlns:CAppLogin/xmlns:AccountNum/text()', 'xmlns' => 'http://oxbranch.optionsxpress.com').to_s
+      else
+        #logger.debug("#{Time.now} signin: @errorMsg is NOT blank")
       end
     end # case res
     redirect_to "/admin"
